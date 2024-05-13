@@ -5,8 +5,9 @@
   scrollHeight="500px"
   [(selectionKeys)]="selectionKeys"
   compareSelectionBy="equals"
-  [selectionMode]="'multiple'"
+  [selectionMode]="'checkbox'"
   filterMode="strict"
+  dataKey="id"
   #tt
 >
   <ng-template pTemplate="header">
