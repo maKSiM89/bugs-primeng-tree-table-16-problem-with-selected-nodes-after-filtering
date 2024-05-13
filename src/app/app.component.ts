@@ -11,6 +11,7 @@ export class AppComponent {
   selectedNodes: TreeTableNode | TreeTableNode[] | null = [];
   filterValue: string = '';
   readonly files = FILES;
+  selectionKeys = {}
 
   onFilter(table: TreeTable, name: string): void {
     table.filter(this.filterValue, name, 'contains');
