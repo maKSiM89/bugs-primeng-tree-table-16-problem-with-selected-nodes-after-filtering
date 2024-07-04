@@ -8,11 +8,13 @@ import { TreeTable } from 'primeng/treetable';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  selectedNodes: TreeTableNode | TreeTableNode[] | null = [];
   filterValue: string = '';
   readonly files = FILES;
   selectionKeys = {
     0: {
+      checked: true
+    },
+    2: {
       checked: true
     }
   }
